@@ -1,0 +1,35 @@
+This application that will be used to manage the logistics of a seaport in terms of a
+transhipment terminal for container ships. The application will be used to unload and load containers from/to the ship. In case of unloading, the containers can be transferred to the warehouse
+or directly to the railway transport carriage.
+Each ship has a different capacity and deadweight defined by:
+• the maximum number of containers with toxic or explosive cargo that can be loaded within
+the ship
+• the maximum number of heavy containers
+• the maximum number of containers requiring connection to the electricity network
+• the maximum number of all containers
+• the maximum weight load
+Each ship stores basic information about itself (unique identification number assigned automatically when creating the object, name, home port, transport origin and destination).
+In the case of load capacity of containers for toxic and explosive cargo - this value is common
+for both types of containers. E.g. if the ship has three places for containers with explosive or
+toxic cargo, these places can be loaded respectively by:
+• 3 containers with explosive cargo
+• 2 containers with explosive cargo and 1 container with toxic cargo
+• 1 containers with explosive cargo and 2 container with toxic cargo
+• 3 container with toxic cargo
+Each type of container has a different set of attributes (e.g. information about the sender,
+tare, information about the security of the container, net weight, gross weight, information about
+certificates, etc.). Also, each container has its own unique identification number assigned automatically when creating the object. For each type of container, you must additionally devise at
+least one unique attribute throughout all container types.
+We have at our disposal, among others:
+• standard container,
+• heavy container, which is a type of standard container,
+• a refrigerated container, which is a type of heavy container, requiring connection to the
+ship’s electrical network,
+• a container for liquids cargo, which is a type of standard container,
+• a container for explosives cargo, which is a type of standard container,
+• a container for toxic cargo, which is a type of heavy container, which is available in two
+versions: a container for toxic powdery cargo and a container for toxic liquid cargo, which
+is not only a kind of heavy container, but also has the features of a container for liquids
+cargo.
+
+
